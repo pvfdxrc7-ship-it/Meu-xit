@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HUD VIP 100% HS</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0f0f0f;color:#fff;font-family:Arial;display:flex;justify-content:center;align-items:center;min-height:100vh}
+.card{background:#1e1e1e;width:90%;max-width:380px;padding:25px;border-radius:20px;box-shadow:0 0 20px #00ff8822;border:1px solid #00ff8822}
+h2{text-align:center;color:#00ff88;margin-bottom:15px}
+input{width:100%;padding:14px;border-radius:10px;border:none;background:#2a2a2a;color:#fff;margin:10px 0;text-align:center}
+.btn{width:100%;padding:14px;border-radius:10px;border:none;background:#00ff88;color:#000;font-weight:bold;font-size:16px;margin-top:10px}
+.item{background:#2a2a2a;padding:14px;border-radius:10px;margin:10px 0;display:flex;justify-content:space-between;cursor:pointer;border:1px solid #333;transition:0.2s}
+.item.on{background:rgba(0,255,136,0.15);color:#00ff88;border-color:#00ff88}
+.hidden{display:none}
+.discord{text-align:center;margin-top:15px;color:#888;font-size:13px}
+</style>
+</head>
+<body>
+<div class="card" id="login">
+<h2>LOGIN VIP</h2>
+<input id="senha" type="password" placeholder="Digite a senha 44">
+<button class="btn" onclick="entrar()">ENTRAR - SENHA 44</button>
+<div class="discord">discord.gg/mum6VA5WFb</div>
+</div>
+<div class="card hidden" id="menu">
+<h2>🔥 MENU VIP 100% HS</h2>
+<div class="item" onclick="this.classList.toggle('on')"><b>🎯 MIRA PUXA CABEÇA 100%</b><span>ON</span></div>
+<div class="item" onclick="this.classList.toggle('on')"><b>🔫 AIMBOT CAPA</b><span>ON</span></div>
+<div class="item" onclick="this.classList.toggle('on')"><b>💀 HS FORÇADO</b><span>ON</span></div>
+<div class="item" onclick="this.classList.toggle('on')"><b>💉 Auto HP</b><span>ON</span></div>
+<div class="item" onclick="this.classList.toggle('on')"><b>👑 Badge Celebrity</b><span>ON</span></div>
+<div class="item" onclick="this.classList.toggle('on')"><b>🏃 Speed 1.7x + Pulo Alto</b><span>ON</span></div>
+<div class="item" onclick="this.classList.toggle('on')"><b>🎨 Nome RGB</b><span>ON</span></div>
+<button class="btn" onclick="alert('✅ HUD 100% ATIVADO! MIRA PUXANDO CABEÇA!')" style="margin-top:10px">ATIVAR TUDO 100%</button>
+<button class="btn" style="background:#333;color:#fff" onclick="sair()">SAIR</button>
+</div>
+<script>
+function entrar(){if(document.getElementById('senha').value=='44'){login.classList.add('hidden');menu.classList.remove('hidden')}else{alert('Senha errada! É 44')}}
+function sair(){menu.classList.add('hidden');login.classList.remove('hidden')}
+</script>
+</body>
+</html>
